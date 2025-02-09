@@ -1,244 +1,85 @@
 {
   "start": {
-    "text": "You wake up in a dark hospital room. A flickering light barely illuminates the bloodstained walls. A note is pinned to your chest: 'You have 3 hours before they come.' What do you do?",
+    "text": "You wake up in a dark hospital, a flickering light revealing bloodstained walls. A note on your chest reads: '3 hours before they come.' What do you do?",
     "choices": [
       { "text": "Check the door", "next": "door" },
       { "text": "Look under the bed", "next": "bed" },
       { "text": "Examine the note", "next": "note" }
     ]
   },
-
   "bed": {
-    "text": "You crouch down and peek under the bed... there's a **pair of eyes staring back at you**. They blink, slowly, then disappear into the shadows beneath the bed. You feel a chill run down your spine.",
+    "text": "You peek under the bed... a pair of eyes blink at you, then vanish into the shadows.",
     "choices": [
-      { "text": "Crawl under the bed", "next": "hide" },
-      { "text": "Get back up quickly", "next": "door" }
+      { "text": "Crawl under", "next": "hide" },
+      { "text": "Get back up", "next": "door" }
     ]
   },
-
   "note": {
-    "text": "You read the note carefully. The ink seems fresh. There's something else written in **tiny letters at the bottom:** 'Don't let them hear you breathe.' The ominous warning sends a shiver through you. You glance around, nervous.",
+    "text": "The note says: 'Don't let them hear you breathe.' A chill runs through you.",
     "choices": [
       { "text": "Check the door", "next": "door" },
       { "text": "Look under the bed", "next": "bed" }
     ]
   },
-
-  "silence": {
-    "text": "You stay perfectly still. The eye behind the keyhole disappears. A moment later, you hear a **whisper right next to your ear**: 'Smart choice... but not enough.' The air grows heavier as if something is closing in on you.",
-    "choices": [
-      { "text": "Turn around slowly", "next": "turn_around" },
-      { "text": "Run for the hallway!", "next": "hallway" }
-    ]
-  },
-
-  "block_door": {
-    "text": "You push a heavy cabinet against the door. The knocking stops... but then you hear something **scratching** at the door from the other side. It's not human, the sound is unnatural, like nails on a chalkboard.",
-    "choices": [
-      { "text": "Step back", "next": "hide" },
-      { "text": "Stay still and listen", "next": "silence" }
-    ]
-  },
-
-  "patient_room": {
-    "text": "You enter a nearby patient room. The bed is **empty**, but the heart monitor is still beeping, a steady rhythm, almost too calm. A clipboard on the desk says: 'Patient discharged at 03:15 AM'... but it's only **2:30 AM**. The clock on the wall flickers ominously.",
-    "choices": [
-      { "text": "Search the room", "next": "search_equipment" },
-      { "text": "Leave quickly", "next": "hallway" }
-    ]
-  },
-
-  "search_equipment": {
-    "text": "You rummage through the abandoned medical tools. Old syringes, broken scalpels... then, you find **a syringe filled with a strange black liquid**. The label reads: 'For when you can't breathe'. You hear something **moving behind you**, it’s too late to run.",
-    "choices": [
-      { "text": "Turn around!", "next": "turn_around" },
-      { "text": "Grab the syringe and hide", "next": "hide" }
-    ]
-  },
-
-  "talk_corpse": {
-    "text": "You hesitate, then whisper to the corpse, 'Who are you?' The body doesn't respond, but then... **its eyes snap open**, and it turns its head to face you. Its mouth opens wide, and from deep within its throat, you hear **your own voice whispering back at you**.",
-    "choices": [
-      { "text": "Run away!", "next": "key_escape" },
-      { "text": "Listen closely", "next": "silence" }
-    ]
-  },
-
   "door": {
-    "text": "You approach the door. It's locked, but you hear faint footsteps outside... Something is out there, moving silently. The handle turns slightly, but the door won't open.",
+    "text": "The door's locked. You hear faint footsteps outside. The handle shakes slightly.",
     "choices": [
-      { "text": "Knock on the door", "next": "knock" },
-      { "text": "Try to pick the lock", "next": "lockpick" },
+      { "text": "Knock", "next": "knock" },
+      { "text": "Pick the lock", "next": "lockpick" },
       { "text": "Look through the keyhole", "next": "keyhole" }
     ]
   },
-
+  "knock": {
+    "text": "You knock. Something knocks back. What’s on the other side?",
+    "choices": [
+      { "text": "Open it", "next": "hallway" },
+      { "text": "Step away", "next": "hide" }
+    ]
+  },
   "lockpick": {
-    "text": "You try to pick the lock with a broken paperclip... but it **snaps in half**! Suddenly, you hear slow breathing right behind you. You can feel the presence of something, or someone, standing just inches away.",
+    "text": "Your paperclip snaps. You hear breathing behind you.",
     "choices": [
       { "text": "Turn around", "next": "turn_around" },
       { "text": "Hide under the bed", "next": "hide" }
     ]
   },
-
   "turn_around": {
-    "text": "You turn around. The light flickers... and for a split second, you see **a figure standing in the corner, watching you**. Then the light goes out completely, plunging the room into darkness. You hear the figure move towards you, but you can't tell from where.",
+    "text": "You turn... a figure stands in the corner, watching you. The lights go out.",
     "choices": [
-      { "text": "Run for the hallway!", "next": "hallway" },
-      { "text": "Close your eyes and stay still", "next": "silence" }
+      { "text": "Run for the hallway", "next": "hallway" },
+      { "text": "Close your eyes", "next": "silence" }
     ]
   },
-
-  "knock": {
-    "text": "You knock on the door. At first, nothing happens. Then... **something knocks back, exactly the same way**. The sound chills your bones. What is on the other side?",
-    "choices": [
-      { "text": "Open the door slowly", "next": "hallway" },
-      { "text": "Step away from the door", "next": "hide" }
-    ]
-  },
-
-  "keyhole": {
-    "text": "You lean down to peek through the keyhole. At first, you see **nothing but darkness**. Then… a pale **eye** looks back at you. You can feel it watching you, as if it knows what you're thinking.",
-    "choices": [
-      { "text": "Scream and back away!", "next": "backaway" },
-      { "text": "Stay silent", "next": "silence" }
-    ]
-  },
-
-  "backaway": {
-    "text": "You stumble back. A soft whisper comes from the other side: 'I see you now.' The footsteps **rush toward your door**. You hear the sound of something heavy being dragged along the ground.",
-    "choices": [
-      { "text": "Try to block the door", "next": "block_door" },
-      { "text": "Hide under the bed", "next": "hide" }
-    ]
-  },
-
-  "hide": {
-    "text": "You crawl under the bed. The door **creaks open**... and something steps inside. You hear slow breathing. It **knows you're here.** Your heart races as you hold your breath.",
-    "choices": [
-      { "text": "Hold your breath", "next": "hold_breath" },
-      { "text": "Close your eyes", "next": "close_eyes" }
-    ]
-  },
-  "close_eyes": {
-    "text": "Nothing happens. You're running out of time...",
-    "choices": [
-      { "text": "Hold your breath", "next": "hold_breath" },
-      { "text": "Get back up quickly", "next": "door" }
-    ]
-  },
-
-  "hold_breath": {
-    "text": "You stay completely still. The footsteps stop. Then... you feel a **cold hand touch your face**. A voice whispers, 'I can hear you... I can smell your fear.'",
-    "choices": [
-      { "text": "SCREAM!", "next": "hallway" },
-      { "text": "Stay frozen", "next": "hallway" }
-    ]
-  },
-
   "hallway": {
-    "text": "The hallway is dark and silent. **Flickering lights cast eerie shadows**. You see an **exit sign** glowing faintly, but also a **staircase leading down** into the darkness. The air is thick with a sense of dread.",
+    "text": "The hallway is dark. An exit sign flickers, but stairs lead deeper into the dark.",
     "choices": [
-      { "text": "Head for the exit", "next": "exit" },
+      { "text": "Go to the exit", "next": "exit" },
       { "text": "Go downstairs", "next": "stairs" },
-      { "text": "Check a nearby patient room", "next": "patient_room" }
+      { "text": "Check a nearby room", "next": "patient_room" }
     ]
   },
-
-  "stairs": {
-    "text": "You descend the stairs. The walls are **covered in old, bloody handprints**. You hear something **breathing in the darkness below...** It's close, but you can't see what it is.",
-    "choices": [
-      { "text": "Keep going", "next": "basement" },
-      { "text": "Turn back", "next": "hallway" }
-    ]
-  },
-
-  "basement": {
-    "text": "The basement is **filled with abandoned medical equipment**. A surgical table is in the center, and there's a **door marked 'Morgue'**. The room is freezing cold, the air stagnant and stale.",
-    "choices": [
-      { "text": "Enter the morgue", "next": "morgue" },
-      { "text": "Search the room", "next": "search_basement" }
-    ]
-  },
-
-  "morgue": {
-    "text": "You open the door to the morgue. Inside, rows of **cold, lifeless bodies** lie on metal tables. As you pass them, a pair of **eyes snap open** and follow you. One of them whispers, 'We’re waiting for you.'",
-    "choices": [
-      { "text": "Run!", "next": "hallway" },
-      { "text": "Stay calm", "next": "silence" }
-    ]
-  },
-
-  "search_basement": {
-    "text": "You search the room, finding a **box of old syringes** and a **dirty bandage**. Suddenly, you hear a **screeching sound** from the morgue door, which **slams shut** on its own.",
-    "choices": [
-      { "text": "Open the morgue door", "next": "morgue" },
-      { "text": "Leave the basement", "next": "hallway" }
-    ]
-  },
-
   "exit": {
-    "text": "You rush toward the exit. The door is locked, but you find a **key** in your pocket. As you turn it, a voice whispers, 'Leaving so soon? It’s not over yet...'",
-    "choices": [
-      { "text": "Turn the key", "next": "turn_key" },
-      { "text": "Run away!", "next": "hallway" }
-    ]
-  },
-
-  "turn_key": {
-    "text": "You turn the key, the door creaks open. Outside, there’s only a dark, deserted street. But in the corner of your eye, **something watches you from the shadows**. You don’t feel free yet.",
+    "text": "You reach the exit. A key unlocks the door. But something watches you from the shadows.",
     "choices": [
       { "text": "Run into the street", "next": "escape" },
       { "text": "Look back", "next": "look_back" }
     ]
   },
-"escape": {
-    "text": "You run into the street, breathless and trembling. But as you look around, the street seems to **stretch on forever**. You can’t escape this nightmare.",
+  "escape": {
+    "text": "The street stretches forever. You can’t escape.",
     "choices": [
       { "text": "Look around", "next": "look_back" },
       { "text": "Keep running", "next": "keep_running" }
     ]
   },
-
-"look_back": {
-    "text": "You turn around, your heart racing. The shadows are no longer just shadows. They start to **move**, forming shapes. Figures begin to emerge from the darkness, all of them wearing **a smile that is far too wide**.",
+  "look_back": {
+    "text": "Figures emerge from the shadows, all smiling far too wide.",
     "choices": [
       { "text": "Face them", "next": "final_battle" },
-      { "text": "Run back into the hospital", "next": "hallway" }
+      { "text": "Run back", "next": "hallway" }
     ]
   },
-
-"final_battle": {
-    "text": "You stand your ground as the figures move closer. But as they surround you, their faces twist, revealing horrifying, distorted versions of your own. **They all whisper your name in unison**, and in that moment, you realize... you’ve always been part of the game. The hospital, the street, the escape – it was all a trap designed for you.",
-    "choices": [
-      { "text": "Surrender", "next": "ending_1" },
-      { "text": "Fight back", "next": "ending_2" }
-    ]
-  },
-
-"ending_1": {
-    "text": "You fall to your knees, finally accepting your fate. The figures close in, their cold hands resting on your shoulders. A voice whispers in your ear: 'You were always meant to die here.' Everything goes black.",
-    "choices": []
-  },
-
-"ending_2": {
-    "text": "You fight back with all your strength, but it’s useless. The figures overwhelm you, pulling you deeper into the abyss. You scream, but your voice is lost in the void. The game has ended, but your soul remains trapped here.",
-    "choices": []
-  },
-
-  "escape": {
-    "text": "You run into the street, breathless and trembling. But as you look around, the street seems to **stretch on forever**. You can’t escape this nightmare.",
-    "choices": [
-      { "text": "Look around", "next": "look_back" },
-      { "text": "Keep running", "next": "keep_running" }
-    ]
-  },
-
-  "keep_running": {
-    "text": "You keep running, faster and faster, but no matter how far you go, you never reach the end. It’s like the world around you is closing in.",
-    "choices": [
-      { "text": "Scream!", "next": "hallway" },
-      { "text": "Keep running", "next": "keep_running" }
-    ]
+  "final_battle": {
+    "text": "The figures close in, their faces twisting into distorted versions of your own. You’ve always been part of the game."
   }
 }
