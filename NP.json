@@ -124,7 +124,7 @@
     "text": "Nothing happens. Your running out of time...",
     "choices": [
       { "text": "Hold your breath", "next": "hold_breath" },
- { "text": "Examine the note", "next": "note" }
+ { "text": "Get back up quickly", "next": "door" }
     ]
   },
 
