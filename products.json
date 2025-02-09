@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "name": "Silver Wolf",
+    "price": 470,
+    "image": "https://th.bing.com/th/id/OIP.EP4oWeNCoM2XVYiSiRvfjgHaHa?rs=1&pid=ImgDetMain"
+  },
+  {
+    "id": 2,
+    "name": "Gold Dragon",
+    "price": 850,
+    "image": "https://example.com/gold-dragon.jpg"
+  }
+]
