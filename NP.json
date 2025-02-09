@@ -45,16 +45,13 @@
   "turn_around": {
     "text": "You turn... a figure stands in the corner, watching you. The lights go out.",
     "choices": [
-      { "text": "Run for the hallway", "next": "hallway" },
-   
+      { "text": "Run for the hallway", "next": "hallway" }
     ]
   },
   "hallway": {
     "text": "The hallway is dark. An exit sign flickers, but stairs lead deeper into the dark.",
     "choices": [
-      { "text": "Go to the exit", "next": "exit" },
-      { "text": "Go downstairs", "next": "stairs" },
-      { "text": "Check a nearby room", "next": "patient_room" }
+      { "text": "Go to the exit", "next": "exit" }
     ]
   },
   "exit": {
