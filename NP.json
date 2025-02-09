@@ -121,10 +121,10 @@
     ]
   },
   "close_eyes": {
-    "text": "Nothing happens. Your running out of time...",
+    "text": "Nothing happens. You're running out of time...",
     "choices": [
       { "text": "Hold your breath", "next": "hold_breath" },
- { "text": "Get back up quickly", "next": "door" }
+      { "text": "Get back up quickly", "next": "door" }
     ]
   },
 
