@@ -7,26 +7,23 @@
       { "text": "Examine the note", "next": "note" }
     ]
   },
+  
   "bed": {
-    "text": "You see an old man with one hand ripped off and his whole body was filled with blood.. and then you have SEX with him..",
-      "choices": [
-      { "text": "Get back up", "next": "door" }
-    ]
-  },
-  "mate": {
     "text": "You peek under the bed... a pair of eyes blink at you, then vanish into the shadows.",
-    "choices": [
+      "choices": [
       { "text": "Crawl under", "next": "mate" },
       { "text": "Get back up", "next": "door" }
     ]
   },
+
   "note": {
-    "text": "The note says: 'Don't let them hear you breathe.' A chill runs through you.",
+    "text": "The note says: 'Don't let them hear you breathe.' A chill runs through your asshole.",
     "choices": [
       { "text": "Check the door", "next": "door" },
       { "text": "Look under the bed", "next": "bed" }
     ]
   },
+  
   "door": {
     "text": "The door's locked. You hear faint footsteps outside. The handle shakes slightly.",
     "choices": [
@@ -34,32 +31,38 @@
       { "text": "Pick the lock", "next": "lockpick" }
     ]
   },
+  
   "knock": {
-    "text": "You knock. Something knocks back. What’s on the other side?",
+    "text": "You knock. Something knocks back. What’s on the other side? but then you hear some sounds, it's like clapping.. or someone is having _ _ _",
     "choices": [
       { "text": "Open it", "next": "hallway" },
-      { "text": "Step away", "next": "hide" }
+      { "text": "Hide under the bed", "next": "mate" }
     ]
   },
+  
   "lockpick": {
     "text": "Your paperclip snaps. You hear breathing behind you.",
     "choices": [
       { "text": "Turn around", "next": "turn_around" },
-      { "text": "Hide under the bed", "next": "hide" }
+      { "text": "Hide under the bed", "next": "mate" }
     ]
   },
+  
   "turn_around": {
-    "text": "You turn... a figure stands in the corner, watching you. The lights go out.",
+    "text": "You turn... a figure stands in the corner, watching you and masturbating.. But the lights go out.",
     "choices": [
-      { "text": "Run for the hallway", "next": "hallway" }
+      { "text": "Run for the hallway", "next": "hallway" },
+      { "text": "Join that figure", "next": "mate_2" }
     ]
   },
+  
   "hallway": {
     "text": "The hallway is dark. An exit sign flickers, but stairs lead deeper into the dark.",
     "choices": [
       { "text": "Go to the exit", "next": "exit" }
     ]
   },
+  
   "exit": {
     "text": "You reach the exit. A key unlocks the door. But something watches you from the shadows.",
     "choices": [
@@ -67,6 +70,7 @@
       { "text": "Look back", "next": "look_back" }
     ]
   },
+  
   "escape": {
     "text": "The street stretches forever. You can’t escape.",
     "choices": [
@@ -74,14 +78,59 @@
       { "text": "Keep running", "next": "keep_running" }
     ]
   },
-  "look_back": {
-    "text": "Figures emerge from the shadows, all smiling far too wide.",
+  
+  "keep_running": {
+    "text": "you saw a wild dog and...",
     "choices": [
-      { "text": "Face them", "next": "final_battle" },
-      { "text": "Run back", "next": "hallway" }
+      { "text": "I fuck it!!", "next": "mate_dg" },
+      { "text": "Look around", "next": "look_back" }
     ]
   },
+
+
+
+
+
+
+
+  "mate": {
+    "text": "You see an old man with one hand ripped off and his whole body was filled with blood.. and then you have SEX with him..",
+    "choices": [
+      { "text": "Get back up", "next": "door" }
+    ]
+  },
+
+  
+  "mate_2": {
+    "text": "You come close to that figure.. and see that it's a young girl/bitch and you guys make love...",
+    "choices": [
+      { "text": "Get back up", "next": "door" }
+    ]
+  },
+
+
+
+
+
+  
+  "look_back": {
+    "text": "Figures emerge from the shadows, all smiling at you.",
+    "choices": [
+      { "text": "Face them", "next": "final_battle" },
+      { "text": "Shit", "next": "shit" }
+    ]
+  },
+  
+  
+  "shit": {
+    "text": "You shit on the street and then eat it.. after that, you shit harder and fly to the moon to make love with it!!."
+   
+  },
+
+  
+  
   "final_battle": {
-    "text": "The figures close in, their faces twisting into distorted versions of your own. You’ve always been part of the game."
+    "text": "The 2 figures close in, their faces twisting into distorted versions of your own. Then they say ~'You’ve always been part of the game'~ Begin to have 3 some until you cum 💀...."
   }
+  
 }
