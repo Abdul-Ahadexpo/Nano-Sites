@@ -120,6 +120,13 @@
       { "text": "Close your eyes", "next": "close_eyes" }
     ]
   },
+  "close_eyes": {
+    "text": "Nothing happens. Your running out of time...",
+    "choices": [
+      { "text": "Hold your breath", "next": "hold_breath" },
+ { "text": "Examine the note", "next": "note" }
+    ]
+  },
 
   "hold_breath": {
     "text": "You stay completely still. The footsteps stop. Then... you feel a **cold hand touch your face**. A voice whispers, 'I can hear you... I can smell your fear.'",
