@@ -168,5 +168,37 @@
       { "text": "Open the morgue door", "next": "morgue" },
       { "text": "Leave the basement", "next": "hallway" }
     ]
+  },
+
+  "exit": {
+    "text": "You rush toward the exit. The door is locked, but you find a **key** in your pocket. As you turn it, a voice whispers, 'Leaving so soon? It’s not over yet...'",
+    "choices": [
+      { "text": "Turn the key", "next": "turn_key" },
+      { "text": "Run away!", "next": "hallway" }
+    ]
+  },
+
+  "turn_key": {
+    "text": "You turn the key, the door creaks open. Outside, there’s only a dark, deserted street. But in the corner of your eye, **something watches you from the shadows**. You don’t feel free yet.",
+    "choices": [
+      { "text": "Run into the street", "next": "escape" },
+      { "text": "Look back", "next": "look_back" }
+    ]
+  },
+
+  "escape": {
+    "text": "You run into the street, breathless and trembling. But as you look around, the street seems to **stretch on forever**. You can’t escape this nightmare.",
+    "choices": [
+      { "text": "Look around", "next": "look_back" },
+      { "text": "Keep running", "next": "keep_running" }
+    ]
+  },
+
+  "keep_running": {
+    "text": "You keep running, faster and faster, but no matter how far you go, you never reach the end. It’s like the world around you is closing in.",
+    "choices": [
+      { "text": "Scream!", "next": "hallway" },
+      { "text": "Keep running", "next": "keep_running" }
+    ]
   }
 }
