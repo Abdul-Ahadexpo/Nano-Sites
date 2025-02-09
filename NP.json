@@ -82,11 +82,12 @@
   "keep_running": {
     "text": "You saw a wild dog and...",
     "choices": [
-      { "text": "I fuck it!!", "next": "mate_dg" },
+      { "text": "I fuck it!!", "next": "mate3" },
       { "text": "Look around", "next": "look_back" }
     ]
   },
-  "mate_dg": {
+  
+  "mate3": {
     "text": "You fucked the dog... now it's dead and you have Sexually transmitted diseases (STDs)",
     "choices": [
       { "text": "Look around", "next": "look_back" },
