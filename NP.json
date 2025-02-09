@@ -46,7 +46,7 @@
     "text": "You turn... a figure stands in the corner, watching you. The lights go out.",
     "choices": [
       { "text": "Run for the hallway", "next": "hallway" },
-      { "text": "Close your eyes", "next": "silence" }
+   
     ]
   },
   "hallway": {
