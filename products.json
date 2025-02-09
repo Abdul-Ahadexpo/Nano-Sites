@@ -1,14 +1,14 @@
 [
   {
     "id": 1,
-    "name": "Silver Wolf",
-    "price": 470,
-    "image": "https://th.bing.com/th/id/OIP.EP4oWeNCoM2XVYiSiRvfjgHaHa?rs=1&pid=ImgDetMain"
+    "name": "AirPods Pro 2 earbuds",
+    "price": 444,
+    "image": "https://s.hdnux.com/photos/01/32/65/57/23813067/5/rawImage.jpg"
   },
   {
     "id": 2,
-    "name": "Gold Dragon",
-    "price": 850,
-    "image": "https://example.com/gold-dragon.jpg"
+    "name": "wireless headphones with cat ears",
+    "price": 880,
+    "image": "https://img.drz.lazcdn.com/g/kf/Se2f3e9f3bc9d4fcb91b6173ea70ed00a8.jpg_720x720q80.jpg_.webp"
   }
 ]
