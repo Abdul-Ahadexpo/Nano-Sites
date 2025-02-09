@@ -192,6 +192,39 @@
       { "text": "Look back", "next": "look_back" }
     ]
   },
+"escape": {
+    "text": "You run into the street, breathless and trembling. But as you look around, the street seems to **stretch on forever**. You can’t escape this nightmare.",
+    "choices": [
+      { "text": "Look around", "next": "look_back" },
+      { "text": "Keep running", "next": "keep_running" }
+    ]
+  },
+
+"look_back": {
+    "text": "You turn around, your heart racing. The shadows are no longer just shadows. They start to **move**, forming shapes. Figures begin to emerge from the darkness, all of them wearing **a smile that is far too wide**.",
+    "choices": [
+      { "text": "Face them", "next": "final_battle" },
+      { "text": "Run back into the hospital", "next": "hallway" }
+    ]
+  },
+
+"final_battle": {
+    "text": "You stand your ground as the figures move closer. But as they surround you, their faces twist, revealing horrifying, distorted versions of your own. **They all whisper your name in unison**, and in that moment, you realize... you’ve always been part of the game. The hospital, the street, the escape – it was all a trap designed for you.",
+    "choices": [
+      { "text": "Surrender", "next": "ending_1" },
+      { "text": "Fight back", "next": "ending_2" }
+    ]
+  },
+
+"ending_1": {
+    "text": "You fall to your knees, finally accepting your fate. The figures close in, their cold hands resting on your shoulders. A voice whispers in your ear: 'You were always meant to die here.' Everything goes black.",
+    "choices": []
+  },
+
+"ending_2": {
+    "text": "You fight back with all your strength, but it’s useless. The figures overwhelm you, pulling you deeper into the abyss. You scream, but your voice is lost in the void. The game has ended, but your soul remains trapped here.",
+    "choices": []
+  },
 
   "escape": {
     "text": "You run into the street, breathless and trembling. But as you look around, the street seems to **stretch on forever**. You can’t escape this nightmare.",
