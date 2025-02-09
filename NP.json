@@ -25,8 +25,7 @@
     "text": "The door's locked. You hear faint footsteps outside. The handle shakes slightly.",
     "choices": [
       { "text": "Knock", "next": "knock" },
-      { "text": "Pick the lock", "next": "lockpick" },
-      { "text": "Look through the keyhole", "next": "keyhole" }
+      { "text": "Pick the lock", "next": "lockpick" }
     ]
   },
   "knock": {
