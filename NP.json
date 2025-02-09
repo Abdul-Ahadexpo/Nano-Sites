@@ -3,52 +3,153 @@
     "text": "You wake up in a dark hospital room. A flickering light barely illuminates the bloodstained walls. A note is pinned to your chest: 'You have 3 hours before they come.' What do you do?",
     "choices": [
       { "text": "Check the door", "next": "door" },
-      { "text": "Look under the bed", "next": "bed" }
+      { "text": "Look under the bed", "next": "bed" },
+      { "text": "Examine the note", "next": "note" }
     ]
   },
+
+  "note": {
+    "text": "The note is written in a shaky hand: 'They took my eyes... they will come for yours too. Run before 3 AM. Find the key in the morgue.'",
+    "choices": [
+      { "text": "Check the door", "next": "door" },
+      { "text": "Look under the bed", "next": "bed" },
+      { "text": "Investigate the walls", "next": "walls" }
+    ]
+  },
+
+  "walls": {
+    "text": "The walls are covered in **scratches and bloodstained words**: 'Don't trust the doctor.' You hear distant footsteps...",
+    "choices": [
+      { "text": "Hide under the bed", "next": "hide" },
+      { "text": "Check the door", "next": "door" }
+    ]
+  },
+
   "door": {
     "text": "You approach the door. It's locked, but you hear faint footsteps outside...",
     "choices": [
       { "text": "Knock on the door", "next": "knock" },
-      { "text": "Try to pick the lock", "next": "lockpick" }
+      { "text": "Try to pick the lock", "next": "lockpick" },
+      { "text": "Look through the keyhole", "next": "keyhole" }
     ]
   },
-  "bed": {
-    "text": "You check under the bed. There's a rusty scalpel. Do you take it?",
+
+  "keyhole": {
+    "text": "You lean down to peek through the keyhole. At first, you see **nothing but darkness**. Then… a pale **eye** looks back at you.",
     "choices": [
-      { "text": "Yes", "next": "take_scalpel" },
-      { "text": "No", "next": "leave_scalpel" }
+      { "text": "Scream and back away!", "next": "backaway" },
+      { "text": "Stay silent", "next": "silence" }
     ]
   },
-  "knock": {
-    "text": "You knock. Silence. Then... a loud **BANG!** Something is trying to break in!",
+
+  "backaway": {
+    "text": "You stumble back. A soft whisper comes from the other side: 'I see you now.' The footsteps **rush toward your door**.",
     "choices": [
-      { "text": "Run!", "next": "run" },
+      { "text": "Try to block the door", "next": "block_door" },
       { "text": "Hide under the bed", "next": "hide" }
     ]
   },
-  "lockpick": {
-    "text": "You try to pick the lock, but your hands are shaking. The footsteps get closer...",
+
+  "silence": {
+    "text": "You don't move. The eye vanishes. But now... the door **unlocks on its own**.",
     "choices": [
-      { "text": "Keep trying", "next": "keep_picking" },
-      { "text": "Give up", "next": "give_up" }
+      { "text": "Open it slowly", "next": "hallway" },
+      { "text": "Run in the opposite direction", "next": "run" }
     ]
   },
-  "take_scalpel": {
-    "text": "You grab the scalpel. It's covered in dry blood...",
+
+  "hallway": {
+    "text": "The hallway is dark and silent. **Flickering lights cast eerie shadows.** You see an **exit sign**, but also a **staircase leading down**.",
     "choices": [
-      { "text": "Inspect it closely", "next": "inspect_scalpel" },
-      { "text": "Ignore it", "next": "ignore_scalpel" }
+      { "text": "Head for the exit", "next": "exit" },
+      { "text": "Go downstairs", "next": "stairs" },
+      { "text": "Check a nearby patient room", "next": "patient_room" }
     ]
   },
-  "leave_scalpel": {
-    "text": "You leave the scalpel behind. Maybe you’ll regret this later...",
+
+  "stairs": {
+    "text": "You descend the stairs. The walls are **covered in old, bloody handprints**. You hear something **breathing in the darkness below...**",
     "choices": [
-      { "text": "Check the door", "next": "door" }
+      { "text": "Keep going", "next": "basement" },
+      { "text": "Turn back", "next": "hallway" }
     ]
   },
-  "end": {
-    "text": "Your fate is sealed. You feel cold hands grabbing you from the darkness... **Game Over.**",
+
+  "basement": {
+    "text": "The basement is **filled with abandoned medical equipment.** A surgical table is in the center, and there's a **door marked 'Morgue'**.",
+    "choices": [
+      { "text": "Enter the morgue", "next": "morgue" },
+      { "text": "Search the equipment", "next": "search_equipment" }
+    ]
+  },
+
+  "morgue": {
+    "text": "The morgue is freezing. **Body bags hang open.** A single metal table has a key on it… but a **corpse sits up suddenly.**",
+    "choices": [
+      { "text": "Grab the key and run!", "next": "key_escape" },
+      { "text": "Talk to the corpse", "next": "talk_corpse" }
+    ]
+  },
+
+  "talk_corpse": {
+    "text": "The corpse tilts its head. 'Don't take the key,' it whispers. 'It's a trap.' What do you do?",
+    "choices": [
+      { "text": "Take the key anyway", "next": "key_escape" },
+      { "text": "Ask it why", "next": "ask_why" }
+    ]
+  },
+
+  "ask_why": {
+    "text": "It stares at you. 'The doctor put a curse on it. The moment you touch it… he'll find you.'",
+    "choices": [
+      { "text": "Ignore the warning and take the key", "next": "key_cursed" },
+      { "text": "Leave the key", "next": "leave_key" }
+    ]
+  },
+
+  "key_escape": {
+    "text": "You grab the key and sprint out. But suddenly, an **alarm blares**! The entire hospital awakens with **screams and footsteps**.",
+    "choices": [
+      { "text": "Run for the exit!", "next": "final_escape" },
+      { "text": "Find a place to hide", "next": "hide" }
+    ]
+  },
+
+  "final_escape": {
+    "text": "You reach the exit… but **the doctor is waiting for you.** A scalpel gleams in his hand.",
+    "choices": [
+      { "text": "Fight him!", "next": "fight_doctor" },
+      { "text": "Run back inside!", "next": "run_inside" }
+    ]
+  },
+
+  "fight_doctor": {
+    "text": "You charge at him, but he's **inhumanly fast.** The last thing you see is his scalpel cutting into your vision... **Game Over.**",
+    "choices": []
+  },
+
+  "run_inside": {
+    "text": "You sprint back inside, but now **every room is filled with patients missing their eyes... and they see you.**",
+    "choices": [
+      { "text": "Run!", "next": "bad_ending" }
+    ]
+  },
+
+  "bad_ending": {
+    "text": "The last thing you hear is the sound of approaching footsteps. The doctor whispers, 'Welcome back.' **Game Over.**",
+    "choices": []
+  },
+
+  "secret_ending": {
+    "text": "You uncover the hospital’s dark truth—this isn't a hospital… it's **a prison for souls**. But now you have a choice. Do you stay and help others escape, or leave alone?",
+    "choices": [
+      { "text": "Stay and free the others", "next": "true_ending" },
+      { "text": "Escape alone", "next": "final_escape" }
+    ]
+  },
+
+  "true_ending": {
+    "text": "**You break the curse and free the trapped souls.** The hospital disappears, and you wake up in your own bed. Was it real? **You may never know...**",
     "choices": []
   }
 }
