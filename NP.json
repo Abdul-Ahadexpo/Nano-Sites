@@ -8,9 +8,15 @@
     ]
   },
   "bed": {
+    "text": "You see an old man with one hand ripped off and his whole body was filled with blood.. and then you have SEX with him..",
+      "choices": [
+      { "text": "Get back up", "next": "door" }
+    ]
+  },
+  "mate": {
     "text": "You peek under the bed... a pair of eyes blink at you, then vanish into the shadows.",
     "choices": [
-      { "text": "Crawl under", "next": "hide" },
+      { "text": "Crawl under", "next": "mate" },
       { "text": "Get back up", "next": "door" }
     ]
   },
