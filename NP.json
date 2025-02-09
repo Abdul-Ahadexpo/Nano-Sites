@@ -1,12 +1,54 @@
 {
-  "users": {
-    "1234567890": {
-      "name": "Abdul Ahad",
-      "np": 500
-    },
-    "9876543210": {
-      "name": "Nayem",
-      "np": 750
-    }
+  "start": {
+    "text": "You wake up in a dark hospital room. A flickering light barely illuminates the bloodstained walls. A note is pinned to your chest: 'You have 3 hours before they come.' What do you do?",
+    "choices": [
+      { "text": "Check the door", "next": "door" },
+      { "text": "Look under the bed", "next": "bed" }
+    ]
+  },
+  "door": {
+    "text": "You approach the door. It's locked, but you hear faint footsteps outside...",
+    "choices": [
+      { "text": "Knock on the door", "next": "knock" },
+      { "text": "Try to pick the lock", "next": "lockpick" }
+    ]
+  },
+  "bed": {
+    "text": "You check under the bed. There's a rusty scalpel. Do you take it?",
+    "choices": [
+      { "text": "Yes", "next": "take_scalpel" },
+      { "text": "No", "next": "leave_scalpel" }
+    ]
+  },
+  "knock": {
+    "text": "You knock. Silence. Then... a loud **BANG!** Something is trying to break in!",
+    "choices": [
+      { "text": "Run!", "next": "run" },
+      { "text": "Hide under the bed", "next": "hide" }
+    ]
+  },
+  "lockpick": {
+    "text": "You try to pick the lock, but your hands are shaking. The footsteps get closer...",
+    "choices": [
+      { "text": "Keep trying", "next": "keep_picking" },
+      { "text": "Give up", "next": "give_up" }
+    ]
+  },
+  "take_scalpel": {
+    "text": "You grab the scalpel. It's covered in dry blood...",
+    "choices": [
+      { "text": "Inspect it closely", "next": "inspect_scalpel" },
+      { "text": "Ignore it", "next": "ignore_scalpel" }
+    ]
+  },
+  "leave_scalpel": {
+    "text": "You leave the scalpel behind. Maybe you’ll regret this later...",
+    "choices": [
+      { "text": "Check the door", "next": "door" }
+    ]
+  },
+  "end": {
+    "text": "Your fate is sealed. You feel cold hands grabbing you from the darkness... **Game Over.**",
+    "choices": []
   }
 }
