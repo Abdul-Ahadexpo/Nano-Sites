@@ -8,29 +8,36 @@
     ]
   },
 
-  "note": {
-    "text": "The note is written in a shaky hand: 'They took my eyes... they will come for yours too. Run before 3 AM. Find the key in the morgue.'",
-    "choices": [
-      { "text": "Check the door", "next": "door" },
-      { "text": "Look under the bed", "next": "bed" },
-      { "text": "Investigate the walls", "next": "walls" }
-    ]
-  },
-
-  "walls": {
-    "text": "The walls are covered in **scratches and bloodstained words**: 'Don't trust the doctor.' You hear distant footsteps...",
-    "choices": [
-      { "text": "Hide under the bed", "next": "hide" },
-      { "text": "Check the door", "next": "door" }
-    ]
-  },
-
   "door": {
-    "text": "You approach the door. It's locked, but you hear faint footsteps outside...",
+    "text": "You approach the door. It's locked, but you hear faint footsteps outside... Something is out there.",
     "choices": [
       { "text": "Knock on the door", "next": "knock" },
       { "text": "Try to pick the lock", "next": "lockpick" },
       { "text": "Look through the keyhole", "next": "keyhole" }
+    ]
+  },
+
+  "lockpick": {
+    "text": "You try to pick the lock with a broken paperclip... but it **snaps in half**! Suddenly, you hear slow breathing right behind you.",
+    "choices": [
+      { "text": "Turn around", "next": "turn_around" },
+      { "text": "Hide under the bed", "next": "hide" }
+    ]
+  },
+
+  "turn_around": {
+    "text": "You turn around. The light flickers... and for a split second, you see **a figure standing in the corner, watching you.** Then the light goes out completely.",
+    "choices": [
+      { "text": "Run for the hallway!", "next": "hallway" },
+      { "text": "Close your eyes and stay still", "next": "silence" }
+    ]
+  },
+
+  "knock": {
+    "text": "You knock on the door. At first, nothing happens. Then... **something knocks back, exactly the same way.**",
+    "choices": [
+      { "text": "Open the door slowly", "next": "hallway" },
+      { "text": "Step away from the door", "next": "hide" }
     ]
   },
 
@@ -50,11 +57,19 @@
     ]
   },
 
-  "silence": {
-    "text": "You don't move. The eye vanishes. But now... the door **unlocks on its own**.",
+  "hide": {
+    "text": "You crawl under the bed. The door **creaks open**... and something steps inside. You hear slow breathing. It **knows you're here.**",
     "choices": [
-      { "text": "Open it slowly", "next": "hallway" },
-      { "text": "Run in the opposite direction", "next": "run" }
+      { "text": "Hold your breath", "next": "hold_breath" },
+      { "text": "Close your eyes", "next": "close_eyes" }
+    ]
+  },
+
+  "hold_breath": {
+    "text": "You stay completely still. The footsteps stop. Then... you feel a **cold hand touch your face.**",
+    "choices": [
+      { "text": "SCREAM!", "next": "hallway" },
+      { "text": "Stay frozen", "next": "hallway" }
     ]
   },
 
@@ -91,22 +106,6 @@
     ]
   },
 
-  "talk_corpse": {
-    "text": "The corpse tilts its head. 'Don't take the key,' it whispers. 'It's a trap.' What do you do?",
-    "choices": [
-      { "text": "Take the key anyway", "next": "key_escape" },
-      { "text": "Ask it why", "next": "ask_why" }
-    ]
-  },
-
-  "ask_why": {
-    "text": "It stares at you. 'The doctor put a curse on it. The moment you touch it… he'll find you.'",
-    "choices": [
-      { "text": "Ignore the warning and take the key", "next": "key_cursed" },
-      { "text": "Leave the key", "next": "leave_key" }
-    ]
-  },
-
   "key_escape": {
     "text": "You grab the key and sprint out. But suddenly, an **alarm blares**! The entire hospital awakens with **screams and footsteps**.",
     "choices": [
@@ -137,19 +136,6 @@
 
   "bad_ending": {
     "text": "The last thing you hear is the sound of approaching footsteps. The doctor whispers, 'Welcome back.' **Game Over.**",
-    "choices": []
-  },
-
-  "secret_ending": {
-    "text": "You uncover the hospital’s dark truth—this isn't a hospital… it's **a prison for souls**. But now you have a choice. Do you stay and help others escape, or leave alone?",
-    "choices": [
-      { "text": "Stay and free the others", "next": "true_ending" },
-      { "text": "Escape alone", "next": "final_escape" }
-    ]
-  },
-
-  "true_ending": {
-    "text": "**You break the curse and free the trapped souls.** The hospital disappears, and you wake up in your own bed. Was it real? **You may never know...**",
     "choices": []
   }
 }
