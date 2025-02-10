@@ -80,7 +80,7 @@ function makeChoice(nextScene) {
   if (nextScene === "end") {
     const name = localStorage.getItem("userName"); // Use name from localStorage
     const endTime = Date.now();
-    const timeTaken = (endTime - startTime) / 1000; // Time in seconds
+    const timeTaken = (endTime - startTime) / 300000; // Time in seconds
     const ending = "Ending 1"; // Change this according to the ending
 
     // Save leaderboard data
@@ -116,17 +116,49 @@ if (userId) {
     loadStory();
   });
 } else {
-  // If no userId, ask for name and create userId
-  const userName = prompt("Enter your name: ");
-  const userId = Date.now().toString(); // Unique user ID based on timestamp
-  localStorage.setItem("userName", userName); // Store user's name in localStorage
-  localStorage.setItem("userId", userId); // Store userId in localStorage
-
-  db.ref(`users/${userId}`).set({
-    name: userName,
-    progress: {
-      currentScene: "start",
+  // If no userId, show SweetAlert2 popup for name input
+  Swal.fire({
+    title: "Enter your name",
+    input: "text",
+    inputPlaceholder: "Your name...",
+    showCancelButton: false,
+    confirmButtonText: "Submit",
+    allowOutsideClick: false,
+    background: "#1e293b", // Cool dark background
+    color: "#f8fafc", // Light text color
+    inputValidator: (value) => {
+      if (!value) {
+        return "You need to enter a name!";
+      }
     },
+  }).then((result) => {
+    if (result.isConfirmed) {
+      const userName = result.value;
+      const userId = Date.now().toString(); // Unique user ID based on timestamp
+
+      // Store user's name and ID in localStorage
+      localStorage.setItem("userName", userName);
+      localStorage.setItem("userId", userId);
+
+      // Save user data in Firebase
+      db.ref(`users/${userId}`).set({
+        name: userName,
+        progress: {
+          currentScene: "start",
+        },
+      });
+
+      // Optional: Show a success message
+      Swal.fire({
+        icon: "success",
+        title: "Welcome!",
+        text: `Hello, ${userName}!`,
+        timer: 3000,
+        showConfirmButton: false,
+        background: "#1e293b", // Cool dark background
+        color: "#f8fafc", // Light text color
+      });
+    }
   });
 
   loadStory();
