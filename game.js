@@ -63,8 +63,6 @@ function loadScene(scene) {
     restartBtn.classList.remove("hidden");
     restartBtn.style.opacity = 0;
     setTimeout(() => (restartBtn.style.opacity = 1), 300);
-  } else {
-    restartBtn.classList.add("hidden");
   }
 
   // Save progress to Firebase
