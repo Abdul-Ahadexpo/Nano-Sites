@@ -36,7 +36,7 @@
     "text": "You knock. Something knocks back. What’s on the other side? but then you hear some sounds, it's like clapping.. or someone is having S E X",
     "choices": [
       { "text": "Open it", "next": "hallway" },
-      { "text": "Hide under the bed", "next": "mate" }
+      { "text": "Hide under the bed again", "next": "mate" }
     ]
   },
   
