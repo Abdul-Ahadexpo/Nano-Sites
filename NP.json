@@ -64,7 +64,7 @@
   },
   
   "exit": {
-    "text": "You reach the exit. A key unlocks the door. But something watches you from the shadows.",
+    "text": "You reach the exit. You found a key that unlocks the door. But something watches you from the shadows.",
     "choices": [
       { "text": "Run into the street", "next": "escape" },
       { "text": "Look back", "next": "look_back" }
